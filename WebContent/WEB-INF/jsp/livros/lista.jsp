@@ -9,9 +9,19 @@
 </head>
 <body>
 	<h3>Lista de livros cadastrados</h3>
+	
+	<c:if test="${not empty mensagem }">
+		<p class="mensagem">
+			${mensagem}
+		</p>
+	</c:if>
+	
 	<ul>
 		<c:forEach items="${livroList}" var="livro">
-			<li>${livro.titulo} - ${livro.descricao}</li>			
+			<li>
+				${livro.titulo} - ${livro.descricao}
+				<a href="${linkTo[LivrosController].editar}?isbn=${livro.isbn}">Modificar</a>
+			</li>		
 		</c:forEach>
 	</ul>
 </body>

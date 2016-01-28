@@ -13,25 +13,25 @@
 		<ul>
 			<li>
 				<label>Titulo:</label>
-				<input type="text" name="livro.titulo"/>
+				<input type="text" name="livro.titulo" value="${livro.titulo}"/>
 			</li>
 			
 			<li>
 				<label>Descrição:</label>
-				<input type="textarea" name="livro.descricao"/>
+				<input type="textarea" name="livro.descricao" value="${livro.descricao}"/>
 			</li>
 			<li>
 				<label>ISBN:</label>
-				<input type="text" name="livro.isbn"/>
+				<input type="text" name="livro.isbn" value="${livro.isbn}"/>
 			</li>
 			<li>
 				<label>Preço:</label>
-				<input type="text" name="livro.preco"/>
+				<input type="text" name="livro.preco" value="${livro.preco}"/>
 			</li>
 			
 			<li>
 				<label>Data de Publicação:</label>
-				<input type="text" name="livro.dataPublicacao"/>
+				<input type="text" name="livro.dataPublicacao" value="${livro.dataPublicacao}"/>
 			</li>
 		</ul>
 		

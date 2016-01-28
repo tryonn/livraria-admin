@@ -8,4 +8,6 @@ public interface Estante {
 	
 	void guarda(Livro livro);
 	List<Livro> todosOsLivros();
+	Livro buscaLivroIsbn(String isbn);
+	Livro promocaoDia();
 }

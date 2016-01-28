@@ -28,4 +28,16 @@ public class MinhaEstante implements Estante {
 		return Arrays.asList(livro, livro1);
 	}
 
+	@Override
+	public Livro buscaLivroIsbn(String isbn) {
+		
+		return todosOsLivros().get(0);
+	}
+
+	@Override
+	public Livro promocaoDia() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
